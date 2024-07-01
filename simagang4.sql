@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 24, 2024 at 04:40 AM
+-- Generation Time: Jul 01, 2024 at 06:48 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -69,10 +69,10 @@ INSERT INTO `anggota` (`id`, `id_users`, `id_magang`, `nama`, `tgl_lahir`, `agam
 (46, 18, 13, 'sethos', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'sethos@gmail.com', '$2y$12$RYaI9fqnbFAfaWrXs8hpOuozk18eTkWtFwl2BK3WSyRPsv7/6Bite', '3', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Belum Selesai', '2024-06-15 07:48:02', '2024-06-15 07:48:02', 'HYof0N93Om8GbXTfFmsPfOu5pXLurml0', 1),
 (47, 4, 5, 'Kurniawan', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'kurniawan@gmail.com', '$2y$12$NFAC6GtAkdjcMapdAM/h9Okk7Fb/O0gKlhe4LiLysd4bsbmPlkjH6', '3', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Belum Selesai', '2024-06-18 21:05:18', '2024-06-18 21:06:06', NULL, 1),
 (48, 4, 5, 'COBA 2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'coba@gmail.com', '$2y$12$WiUykJy3RWqe2YtaFzRtgejZ1/rpNnAfF54NNL7.bZl1xOJ.LyV2a', '3', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Belum Selesai', '2024-06-18 21:20:33', '2024-06-18 21:20:33', 'CEbJbPHkDxZg8GhX7EU8wMLJJab5CJsb', 0),
-(49, 4, 5, 'coba1111', '2024-06-10', 'Khatolik', 'Laki-laki', 'Universitas Jember', 'D4', 'Akutansi Manajemen', '122244554', '0862557168793', 'coba1@gmail.com', '$2y$12$RYaI9fqnbFAfaWrXs8hpOuozk18eTkWtFwl2BK3WSyRPsv7/6Bite', '3', 'coba1111_122244554_sertifikat.pdf', 'coba1111_122244554_fotoProfil.jpg', 'coba1111_122244554_cv.pdf', 'https://siakad.polinema.ac.id/beranda', 'https://siakad.polinema.ac.id/beranda', 'JAWA TIMUR', 'KABUPATEN JOMBANG', 'KUDU', 'KEPUHREJO', 'Belum Selesai', '2024-06-19 07:08:45', '2024-06-19 22:02:22', NULL, 1),
-(50, 18, 13, 'coba2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'boba2@gmail.com', '$2y$12$a1/tIm1.pPIxP8owkGWTBe/MbB/139ZspfrjvlK5.Bhw0v6WZr8vC', '3', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Belum Selesai', '2024-06-20 02:01:25', '2024-06-20 02:01:25', '9BTVKKclxPjZSmYXRyREhr9pNnGJltBT', 0),
 (51, 18, 13, 'Ahmad Dahani', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'ahmad@gmail.com', '$2y$12$3l07Bpw5LU96N3yBFG.nnO6WcIvT6c7DZyLkxGpzvrypG1wG4eCEG', '3', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Belum Selesai', '2024-06-21 00:15:38', '2024-06-21 00:16:20', NULL, 1),
-(61, 22, 1, 'Naruto Uzumaki', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'naruti@gmail.com', '$2y$12$YUc1z3wV27xnbe6asmYi5.yrvbeY9ki68Yu0aoGxELBdVR2Uy6Y6y', '3', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Belum Selesai', '2024-06-23 08:42:13', '2024-06-23 08:42:13', '3Lo54QJOAyZGQdNRrlKeUp1xnvkGv0wI', 0);
+(74, 2, 12, 'Dio Apriansyahhhhhhhhhh', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'ghafur@gmail.com', '$2y$12$AZw7SSHi6yYoJH.xOI2VUu1Bna8bldPbbJ75r0b6UekUAzhcsx3XG', '3', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Belum Selesai', '2024-06-23 20:48:11', '2024-06-23 20:48:11', 'qz8Eyo0Ods1uQforF4cL7i3wbjFjYjGF', 0),
+(76, 33, 15, 'Aisyah', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'aisyah@gmail.com', '$2y$12$7PduYZJ38Sl9yv9TKNeQweRJRCF/tZXHQRD8Ein9moPKX6rYFf7/q', '3', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Belum Selesai', '2024-06-24 20:24:08', '2024-06-24 20:25:15', NULL, 1),
+(105, 14, 17, 'Santoso', '2024-07-08', 'Islam', 'Laki-laki', 'Politeknik Negeri Malang', 'D3', 'Teknologi Informasi', '7136763713', '085157914022', 'santoso@gmail.com', '$2y$12$GRC7yaZ1aOvAmC2Jah/FuOCPwnpxsplylZPLAqvc4keBW4VS4aKtS', '3', NULL, 'Santoso_7136763713_fotoProfil.jpeg', 'Santoso_7136763713_cv.pdf', NULL, NULL, 'BALI', 'KABUPATEN KLUNGKUNG', 'KLUNGKUNG', 'SEMARAPURA KANGIN', 'Belum Selesai', '2024-06-30 20:41:10', '2024-06-30 20:43:24', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -192,6 +192,9 @@ CREATE TABLE `magang` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `id_projek` bigint(20) UNSIGNED DEFAULT NULL,
   `id_users` bigint(20) UNSIGNED NOT NULL,
+  `fakultas` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `nomor_surat_rekomendasi` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `alamat_kampus` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `surat_rekomendasi` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `proposal` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `status` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT 'Document Submitted',
@@ -209,11 +212,13 @@ CREATE TABLE `magang` (
 -- Dumping data for table `magang`
 --
 
-INSERT INTO `magang` (`id`, `id_projek`, `id_users`, `surat_rekomendasi`, `proposal`, `status`, `surat_pengantar`, `dosen_pembimbing_lapangan`, `dosen_pembimbing_kampus`, `satuan_kerja`, `tanggal_mulai`, `tanggal_berakhir`, `created_at`, `updated_at`) VALUES
-(1, NULL, 22, 'Bella Jhonshon xxpppp_233314444444_surat_rekomendasi.pdf', '', 'On Review', 'Bella Jhonshon xxpppp_233314444444_surat_pengantar.pdf', 'Agus Sunyoto', 'Lukman Affandi', 'IT & Automation Muda', '2024-05-06', '2024-06-28', '2024-05-29 20:13:31', '2024-06-17 20:34:55'),
-(5, NULL, 4, 'ABD Ghafur_32212212_surat_rekomendasi.pdf', 'ABD Ghafur_32212212_Proposal.pdf', 'Rejected', 'ABD Ghafur_32212212_surat_pengantar.pdf', NULL, 'Pramana Yoga Saputra', 'Kelistrikan', '2024-06-03', '2024-06-29', '2021-06-05 02:04:25', '2024-06-20 10:03:37'),
-(12, NULL, 2, NULL, NULL, 'Document Submitted', 'Dio Apriansyah_746423123_surat_pengantar.pdf', 'Agus Sunyoto', 'Lukman Affandi', 'Supply Chain Management', '2024-06-10', '2024-06-26', '2024-06-10 06:47:51', '2024-06-12 21:11:44'),
-(13, NULL, 18, 'Cloud Retainer_3213324254_surat_rekomendasi.pdf', 'Cloud Retainer_3213324254_Proposal.pdf', 'Accepted', 'Cloud Retainer_3213324254_surat_pengantar.pdf', NULL, 'Lukman Affandi', 'Penunjang Umum', '2024-06-05', '2024-06-21', '2024-06-14 01:30:31', '2024-06-14 01:32:56');
+INSERT INTO `magang` (`id`, `id_projek`, `id_users`, `fakultas`, `nomor_surat_rekomendasi`, `alamat_kampus`, `surat_rekomendasi`, `proposal`, `status`, `surat_pengantar`, `dosen_pembimbing_lapangan`, `dosen_pembimbing_kampus`, `satuan_kerja`, `tanggal_mulai`, `tanggal_berakhir`, `created_at`, `updated_at`) VALUES
+(1, NULL, 22, 'Ekonomi dan Bisnis', '11199/P2.1/PM/2024', 'Jl. Soekarno Hatta No. 9 Malang 65141', 'Bella Jhonshon xxpppp_233314444444_surat_rekomendasi.pdf', '', 'Accepted', 'Bella Jhonshon xxpppp aa_233314444444_surat_pengantar.pdf', 'Agus Sunyoto', 'Lukman Affandi', 'IT & Automation Muda', '2024-05-06', '2024-06-28', '2024-05-29 20:13:31', '2024-06-28 23:32:11'),
+(5, NULL, 4, '', '', '', 'ABD Ghafur_32212212_surat_rekomendasi.pdf', 'ABD Ghafur_32212212_Proposal.pdf', 'Rejected', 'ABD Ghafur_32212212_surat_pengantar.pdf', NULL, 'Pramana Yoga Saputra', 'Kelistrikan', '2024-06-03', '2024-06-29', '2021-06-05 02:04:25', '2024-06-20 10:03:37'),
+(12, NULL, 2, '', '', '', NULL, NULL, 'Document Submitted', 'Dio Apriansyah_746423123_surat_pengantar.pdf', 'Agus Sunyoto', 'Lukman Affandi', 'Supply Chain Management', '2024-06-10', '2024-06-26', '2024-06-10 06:47:51', '2024-06-12 21:11:44'),
+(13, NULL, 18, '', '', '', 'Cloud Retainer_3213324254_surat_rekomendasi.pdf', 'Cloud Retainer_3213324254_Proposal.pdf', 'Accepted', 'Cloud Retainer_3213324254_surat_pengantar.pdf', NULL, 'Lukman Affandi', 'Penunjang Umum', '2024-06-05', '2024-06-21', '2024-06-14 01:30:31', '2024-06-14 01:32:56'),
+(15, NULL, 33, '', '', '', 'Nadhif__surat_rekomendasi.pdf', 'Nadhif__Proposal.pdf', 'Accepted', 'Nadhif__surat_pengantar.pdf', NULL, 'Lukman Affandi', 'CSR (Corporate Social Responsibility)', '2024-06-12', '2024-06-29', '2024-06-24 20:20:18', '2024-06-24 20:28:10'),
+(17, NULL, 14, 'Teknologi Informasi', '1212/2323/XI/2022', 'Jl. Soekarno-Hatta, Malang', 'Agus Mulawarman_12331313_surat_rekomendasi.pdf', 'Agus Mulawarman_12331313_Proposal.pdf', 'On Review', NULL, NULL, 'Lukman Affandi', 'Penunjang Umum', '2024-07-01', '2024-07-27', '2024-06-30 20:20:18', '2024-06-30 20:22:59');
 
 -- --------------------------------------------------------
 
@@ -260,6 +265,26 @@ CREATE TABLE `password_reset_tokens` (
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `penilaian_magang`
+--
+
+CREATE TABLE `penilaian_magang` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `id_magang` bigint(20) UNSIGNED NOT NULL,
+  `id_users` bigint(20) UNSIGNED NOT NULL,
+  `identitas_diri` int(11) NOT NULL,
+  `github` int(11) NOT NULL,
+  `linkedin` int(11) NOT NULL,
+  `instagram` int(11) NOT NULL,
+  `proposal` int(11) NOT NULL,
+  `surat_rekomendasi` int(11) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -414,17 +439,19 @@ INSERT INTO `users` (`id`, `id_detail_users`, `google_id`, `github_id`, `faceboo
 (8, NULL, NULL, NULL, '', NULL, '2024-05-26', 'Kristen', 'Perempuan', 'Universitas Indonesia', 'S1', 'Teknik Geologi', '112133243', '0827736761387', NULL, NULL, 'Tidak Aktif', NULL, 'https://siakad.polinema.ac.id/beranda', 'https://siakad.polinema.ac.id/beranda', 'Bella Cantika Putri', 'bella@gmail.com', NULL, '$2y$12$MjRbdoRcvW1XebPMAJUQUu4DWbufH9AqOfgFRUtYReFba.txSYPOu', 0, NULL, '2024-04-04 00:12:35', '2024-06-05 06:55:56', 'JAWA BARAT', 'KABUPATEN BEKASI', 'TAMBUN UTARA', 'SRIMUKTI'),
 (9, NULL, NULL, NULL, '', NULL, '2024-06-12', 'Khatolik', 'Perempuan', 'Universitas Lampung', 'S1', 'Manajemen Syari\'ah', '152763543', '0827736761387', NULL, NULL, 'Aktif', NULL, 'https://siakad.polinema.ac.id/beranda', 'https://siakad.polinema.ac.id/beranda', 'Rika Annabela', 'rika@gmail.com', NULL, '$2y$12$SaV4sd5TmWEkh1RatKZPGOyoOB3GX58Yexm.jyyXJ77ZNz3d8KXo2', 0, NULL, '2024-04-15 04:43:52', '2024-06-09 07:15:04', 'BENGKULU', 'KABUPATEN BENGKULU UTARA', 'TANJUNG AGUNG PALIK', 'SAWANG LEBAR'),
 (11, NULL, NULL, NULL, '', NULL, '2024-06-26', NULL, 'Laki-laki', 'Politeknik Negeri Malang', 'D4', 'Teknik Kimia Industri', '231212234', '0827736761387', NULL, NULL, 'Aktif', NULL, 'https://siakad.polinema.ac.id/beranda', 'https://siakad.polinema.ac.id/beranda', 'Kamisato Ayato', 'ayato@gmail.com', NULL, '$2y$12$Jgl1KS.61gxWztxyf2iMyOnH7ZVd1.fC1a3j49oyqr/nCESeiOd5y', 0, NULL, '2024-05-23 18:39:51', '2024-06-05 06:59:40', 'JAWA TIMUR', 'KABUPATEN JOMBANG', 'TEMBELANG', 'GABUSBANARAN'),
-(14, NULL, NULL, NULL, '', NULL, NULL, 'Kristen', NULL, 'POLINEMA', 'D3', 'Manajemen Informatika', '12331313', '0862557676', '1716520327_sertifikat.pdf', '1716520327.jpg', 'Tidak Aktif', '1716520327_cv.pdf', NULL, NULL, 'agus', 'agus@gmail.com', NULL, '$2y$12$OAovF9N13tOZ75xR.Nlei.DPQAS/Wtgpon0PIbQNkXiFMgFg.WEP.', 0, NULL, '2024-05-23 20:12:07', '2024-05-23 20:12:07', NULL, NULL, NULL, NULL),
+(14, NULL, NULL, NULL, '', NULL, '2024-07-04', 'Kristen', 'Laki-laki', 'Universitas Airlangga', 'D3', 'Manajemen Informatika', '12331313', '0862557676', '1716520327_sertifikat.pdf', '1716520327.jpg', 'Aktif', '1716520327_cv.pdf', 'https://.polinema.ac.id/beranda', 'https://siakad.polinema.ac.id/beranda', 'Agus Mulawarman', 'agus@gmail.com', NULL, '$2y$12$OAovF9N13tOZ75xR.Nlei.DPQAS/Wtgpon0PIbQNkXiFMgFg.WEP.', 0, NULL, '2024-05-23 20:12:07', '2024-06-30 20:21:03', 'DKI JAKARTA', 'KOTA JAKARTA TIMUR', 'CIRACAS', 'KELAPA DUA WETAN'),
 (16, NULL, NULL, NULL, '', NULL, '2024-06-21', 'Islam', 'Perempuan', 'Universitas Jember', 'S1', 'Teknik Kimia Industri', '126176226', '0827736761387', NULL, NULL, 'Aktif', NULL, 'https://siakad.polinema.ac.id/beranda', 'https://siakad.polinema.ac.id/beranda', 'Kokomi', 'kokomi@gmail.com', NULL, '$2y$12$VGUCVPgrGWS2g.8G6OVXueUzbyTnNFz/2aYgfQeYxjCyd3zeVOHYS', 0, NULL, '2024-05-26 05:22:30', '2024-06-09 07:17:03', 'JAWA TIMUR', 'KABUPATEN MALANG', 'DAMPIT', 'BUMIREJO'),
 (17, NULL, NULL, NULL, '', NULL, '2024-05-08', 'Khatolik', 'Laki-laki', NULL, NULL, NULL, '42314524', '0827736761387', NULL, 'Neuvillete_42314524_fotoProfil.jpeg', 'Tidak Aktif', NULL, NULL, NULL, 'Neuvillete', 'neuviilete@gmail.com', NULL, '$2y$12$GXLEcLdYiKklvFp3Cbrilu9J6ohohGQe6tOT5QBbiNB1mfV8I1GCC', 0, NULL, '2024-05-26 05:37:17', '2024-05-26 05:37:17', NULL, NULL, NULL, NULL),
 (18, NULL, NULL, NULL, '', NULL, '2024-05-15', 'Kristen', 'Perempuan', 'POLINEMA', 'D3', 'Teknologi Informasi', '3213324254', '0862557168793', 'Cloud Retainer_3213324254_sertifikat.pdf', 'Cloud Retainer_3213324254_fotoProfil.jpg', 'Aktif', 'Cloud Retainer_3213324254_cv.pdf', 'https://siakad.polinema.ac.id/beranda', 'https://siakad.polinema.ac.id/beranda', 'Cloud Retainer', 'xianyun@gmail.com', NULL, '$2y$12$KOgcL7eUndEfbllRh8HF3.Nr2TsU1kiPQLHHW65Wzn8euciHvZnPC', 0, NULL, '2024-05-28 01:49:06', '2024-06-21 20:55:15', 'JAMBI', 'KABUPATEN TANJUNG JABUNG TIMUR', 'MUARA SABAK BARAT', 'NIBUNG PUTIH'),
 (19, NULL, NULL, NULL, '', NULL, '2024-05-31', 'on', 'Laki-laki', 'POLINEMA', 'on', 'Akutansi Manajemen', '5361351434', '0827736761387', 'Wanderer_5361351434_sertifikat.pdf', 'Wanderer_5361351434_fotoProfil.jpeg', 'Tidak Aktif', 'Wanderer_5361351434_cv.pdf', NULL, NULL, 'Wanderer', 'wanderer@gmail.com', NULL, '$2y$12$zyI0Mf62qR1iAtvkk1.EvOKAHTMyeolaC3f.Y53N9baNxOl33gzyG', 0, NULL, '2024-05-28 02:05:22', '2024-05-28 02:05:22', 'JAMBI', NULL, 'MUARA TEMBESI', 'SUKARAMAI'),
 (21, NULL, NULL, NULL, '', NULL, '2024-06-01', 'Hindu', 'Laki-laki', 'POLINEMA', 'S1', 'Teknologi Informasi', '5361351434', '0827736761387', 'Reza Kurnia_5361351434_sertifikat.pdf', 'Reza Kurnia_5361351434_fotoProfil.png', 'Tidak Aktif', 'Reza Kurnia_5361351434_cv.pdf', 'https://siakad.polinema.ac.id/beranda', 'https://siakad.polinema.ac.id/beranda', 'Reza Kurnia', 'reza@gmail.com', NULL, '$2y$12$01vKutECdfjrQeb9ICvj8.0bO2KcpnqN3ru15ac9DzrEMrZbeOX3K', 0, NULL, '2024-05-28 05:53:23', '2024-05-28 05:53:23', 'SUMATERA BARAT', NULL, 'TIGO LURAH', 'TANJUANG BALIK SUMISO'),
-(22, NULL, NULL, NULL, '', NULL, '2024-06-11', 'Islam', 'Laki-laki', 'Universitas Brawijaya', 'SMA/SMK', 'Administrasi Bisnis', '233314444444', '08277344444444444', 'Bella Jhonshon_23331351434_sertifikat.pdf', 'Bella Jhonshon_23331351434_fotoProfil.jpeg', 'Tidak Aktif', 'Bella Jhonshon_23331351434_cv.pdf', 'https://.polinema.ac.id/beranda', 'https://.polinema.ac.id/beranda', 'Bella Jhonshon xxpppp aa', 'jean@gmail.com', NULL, '$2y$12$p52kjdW/GZQiXScWeoO4qOugjMISUAnBKEHAlJ8LI0RQ71VW0AeWu', 0, NULL, '2024-05-28 06:09:22', '2024-06-09 07:18:13', 'JAWA BARAT', 'KABUPATEN PURWAKARTA', 'BOJONG', 'SINDANGPANON'),
+(22, NULL, NULL, NULL, '', NULL, '2024-06-11', 'Islam', 'Laki-laki', 'Universitas Brawijaya', 'SMA/SMK', 'Administrasi Bisnis', '233314444444', '08277344444444444', 'Bella Jhonshon_23331351434_sertifikat.pdf', 'Bella Jhonshon_23331351434_fotoProfil.jpeg', 'Tidak Aktif', 'Bella Jhonshon_23331351434_cv.pdf', 'https://.polinema.ac.id/beranda', 'https://.polinema.ac.id/beranda', 'Jean Dandelions', 'jean@gmail.com', NULL, '$2y$12$p52kjdW/GZQiXScWeoO4qOugjMISUAnBKEHAlJ8LI0RQ71VW0AeWu', 0, NULL, '2024-05-28 06:09:22', '2024-06-24 18:37:35', 'JAWA BARAT', 'KABUPATEN PURWAKARTA', 'BOJONG', 'SINDANGPANON'),
 (23, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Tidak Aktif', NULL, NULL, NULL, 'Alhaitham', 'alhaitham@gmail.com', NULL, '$2y$12$XupCvta9JBjQJmt5IzES9u8PXpAbPznz0btxo8v5U1KUIjdwyr9/e', 0, NULL, '2024-06-05 19:00:03', '2024-06-05 19:00:03', NULL, NULL, NULL, NULL),
 (24, NULL, '100780071595688108408', NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Tidak Aktif', NULL, NULL, NULL, 'Fikri irmansyah (fikmen)', 'mochvitra@gmail.com', NULL, '$2y$12$L4jp1w20WkIMEy8RMp9U..e3zdjFuEeF2GuhwrS9Nw8KW8KHmS7H.', 0, NULL, '2024-06-11 06:59:36', '2024-06-11 06:59:36', NULL, NULL, NULL, NULL),
 (30, NULL, '106716464334500378468', '160445602', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Tidak Aktif', NULL, NULL, NULL, 'Squid-IO', 'lordkings481@gmail.com', NULL, '$2y$12$4yvaXebIbiCBWYZILlk0x.gsS8wLC7zzUIBbMKtnvp7U7noGMLx66', 0, NULL, '2024-06-12 19:48:46', '2024-06-12 19:51:40', NULL, NULL, NULL, NULL),
-(31, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Tidak Aktif', NULL, NULL, NULL, 'Laras', 'laras@gmail.com', NULL, '$2y$12$nvtX4sG4qItCmdYyEF.XkO7zKzVGeztSH5OY2MtDeGKCkGiaGSbT.', 0, NULL, '2024-06-21 19:58:54', '2024-06-21 19:58:54', NULL, NULL, NULL, NULL);
+(31, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Tidak Aktif', NULL, NULL, NULL, 'Laras', 'laras@gmail.com', NULL, '$2y$12$nvtX4sG4qItCmdYyEF.XkO7zKzVGeztSH5OY2MtDeGKCkGiaGSbT.', 0, NULL, '2024-06-21 19:58:54', '2024-06-21 19:58:54', NULL, NULL, NULL, NULL),
+(32, NULL, NULL, NULL, NULL, NULL, '2024-06-12', 'Islam', NULL, NULL, 'D3', NULL, NULL, NULL, NULL, 'Agus Setiawan__fotoProfil.jpg', 'Tidak Aktif', NULL, NULL, NULL, 'Agus Setiawan', 'agus1@gmail.com', NULL, '$2y$12$7mOTEchGFNNqHrb2BcwBI.sr9enkjWdPYIo8uFiCS/sOT5ZN9n08G', 0, NULL, '2024-06-24 19:25:02', '2024-06-24 19:44:23', 'LAMPUNG', 'KABUPATEN LAMPUNG SELATAN', 'KALIANDA', 'SUKARATU'),
+(33, NULL, NULL, NULL, NULL, NULL, NULL, 'Islam', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Nadhif__fotoProfil.png', 'Tidak Aktif', NULL, NULL, NULL, 'Nadhif', 'nadhif@gmail.com', NULL, '$2y$12$8Lyyq0m2Qclf9jhIVhHneOsokNmz2aR5yPgpU2FexD.WML30X5HBS', 0, NULL, '2024-06-24 20:19:08', '2024-06-24 20:29:52', 'KALIMANTAN BARAT', 'KABUPATEN KETAPANG', 'JELAI HULU', 'PERIANGAN');
 
 --
 -- Indexes for dumped tables
@@ -501,6 +528,13 @@ ALTER TABLE `password_reset_tokens`
   ADD PRIMARY KEY (`email`);
 
 --
+-- Indexes for table `penilaian_magang`
+--
+ALTER TABLE `penilaian_magang`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_magang` (`id_magang`);
+
+--
 -- Indexes for table `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
@@ -543,7 +577,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `anggota`
 --
 ALTER TABLE `anggota`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
 
 --
 -- AUTO_INCREMENT for table `detail_users`
@@ -579,13 +613,19 @@ ALTER TABLE `kualifikasi`
 -- AUTO_INCREMENT for table `magang`
 --
 ALTER TABLE `magang`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `penilaian_magang`
+--
+ALTER TABLE `penilaian_magang`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
@@ -615,7 +655,7 @@ ALTER TABLE `testimonials`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- Constraints for dumped tables
@@ -652,6 +692,12 @@ ALTER TABLE `kualifikasi`
 --
 ALTER TABLE `magang`
   ADD CONSTRAINT `magang_id_projek_foreign` FOREIGN KEY (`id_projek`) REFERENCES `projek` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `penilaian_magang`
+--
+ALTER TABLE `penilaian_magang`
+  ADD CONSTRAINT `penilaian_magang_ibfk_1` FOREIGN KEY (`id_magang`) REFERENCES `magang` (`id`);
 
 --
 -- Constraints for table `testimonials`
