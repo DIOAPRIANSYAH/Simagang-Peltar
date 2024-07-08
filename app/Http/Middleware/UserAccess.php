@@ -12,16 +12,20 @@ class UserAccess
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
+     * @param  string  $userType
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
 
     public function handle(Request $request, Closure $next, $userType)
     {
-        if (auth()->user()->type == $userType) {
+        if (auth()->check() && auth()->user()->type == $userType) {
             return $next($request);
         }
 
-        return response()->json(['You do not have permission to access for this page.']);
-        /* return response()->view('errors.check-permission'); */
+        return response()->view('components.error', [
+            'message' => 'You do not have permission to access this page.',
+            'user_type' => auth()->user()->type ?? 'guest',
+            'required_type' => $userType,
+        ], 403);
     }
 }

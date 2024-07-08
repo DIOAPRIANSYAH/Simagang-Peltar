@@ -27,7 +27,6 @@
                                             <th>No</th>
                                             <th>Nama Satuan Kerja</th>
                                             <th>Deskripsi</th>
-                                            <th class="text-center">Di Buat Pada</th>
                                             <th class="text-center">Aksi</th>
                                         </tr>
                                     </thead>
@@ -37,8 +36,7 @@
                                                 <td>{{ $no + 1 }}</td>
                                                 <td>{{ $satker->nama_satker }}</td>
                                                 <td>{{ Str::limit($satker->deskripsi, 50) }}</td>
-                                                <td>{{ $satker->created_at }}</td>
-                                                <td>
+                                                <td class="text-center">
                                                     <a href="{{ route('satker.show', $satker->getEncryptedId()) }}"
                                                         class="btn btn-sm btn-info">Lihat</a>
                                                     <a href="{{ route('satker.edit', $satker->getEncryptedId()) }}"

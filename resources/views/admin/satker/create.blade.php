@@ -18,7 +18,8 @@
                             <h4 class="card-header card-title rounded bg-primary text-white shadow-lg text-center-md">Tambah
                                 Data Satuan Kerja</h4>
 
-                            <form class="forms-sample" method="POST" action="{{ route('satker.store') }}">
+                            <form class="forms-sample" enctype="multipart/form-data" method="POST"
+                                action="{{ route('satker.store') }}">
                                 @csrf
                                 <div class="row">
                                     <div class="col">
@@ -35,8 +36,9 @@
 
                                             <label for="foto" class="input-group-text" \
                                                 for="inputGroupFile01">Upload</label>
-                                            <input type="file" class="form-control" id="inputGroupFile01" id="foto"
-                                                name="foto" onchange="previewImage(event)">
+                                            <input type="file" accept="image/*" class="form-control"
+                                                id="inputGroupFile01" id="foto" name="foto"
+                                                onchange="previewImage(event)">
                                         </div>
                                     </div>
                                 </div>
@@ -60,6 +62,25 @@
     @endsection
 
     @push('js')
+        @if (session('error'))
+            <script>
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: '{{ session('error') }}',
+                });
+            </script>
+        @endif
+
+        @if ($errors->any())
+            <script>
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    html: '{!! implode('<br>', $errors->all()) !!}',
+                });
+            </script>
+        @endif
         <script>
             function previewImage(event) {
                 var reader = new FileReader();

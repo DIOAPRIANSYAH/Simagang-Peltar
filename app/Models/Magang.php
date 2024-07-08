@@ -31,13 +31,17 @@ class Magang extends Model
 
     public function projek()
     {
-        return $this->belongsTo(projek::class, 'id_projek');
+        return $this->belongsTo(Projek::class, 'id_projek');
     }
-
 
     public function user()
     {
         return $this->belongsTo(User::class, 'id_users', 'id');
+    }
+
+    public function ketua()
+    {
+        return $this->belongsTo(User::class, 'id_users');
     }
 
     // Method untuk mendapatkan ID terenkripsi
@@ -46,12 +50,7 @@ class Magang extends Model
         return Crypt::encryptString($this->id);
     }
 
-    public function ketua()
-    {
-        return $this->belongsTo(User::class, 'id_users');
-    }
-
-    // Method untuk menemukan Satker berdasarkan ID terenkripsi
+    // Method untuk menemukan Magang berdasarkan ID terenkripsi
     public static function findByEncryptedId($encryptedId)
     {
         try {

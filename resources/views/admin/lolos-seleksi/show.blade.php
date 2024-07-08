@@ -101,7 +101,7 @@
                                     </div>
                                 </div>
 
-                                <div class="row">
+                                {{-- <div class="row">
                                     <div class="col">
                                         <div class="form-group">
                                             <label for="judul"><strong>Judul Projek</strong></label>
@@ -112,7 +112,7 @@
                                                 disabled>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
 
                                 <div class="row">
                                     <div class="col">
@@ -183,9 +183,8 @@
                                     <div class="col">
                                         <div class="form-group">
                                             <label for="satuan_kerja"><strong>Satuan Kerja</strong></label>
-                                            <input type="text" class="form-control" id="satuan_kerja"
-                                                name="satuan_kerja" placeholder="Satuan Kerja" disabled
-                                                value="{{ $magang->satuan_kerja }}">
+                                            <input type="text" class="form-control" id="satuan_kerja" name="satuan_kerja"
+                                                placeholder="Satuan Kerja" disabled value="{{ $magang->satuan_kerja }}">
                                         </div>
                                     </div>
                                 </div>

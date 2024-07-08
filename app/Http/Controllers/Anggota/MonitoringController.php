@@ -15,27 +15,10 @@ class MonitoringController extends Controller
     {
         $satkers = Satker::all();
 
-        // Cari Anggota berdasarkan id_users dari pengguna yang sedang masuk
-        $anggota = Anggota::where('id_users', Auth::id())->first();
-
-        if (!$anggota) {
-            return "Anggota tidak ditemukan untuk user saat ini.";
-            // Atau bisa juga redirect ke halaman lain, atau tampilkan pesan error
-        }
-
-        // Ambil data Magang berdasarkan id_magang yang terhubung dengan Anggota
-        $magang = $anggota->magang;
-
-        if (!$magang) {
-            return "Data magang tidak ditemukan untuk anggota ini.";
-            // Atau bisa juga redirect ke halaman lain, atau tampilkan pesan error
-        }
-
-        // Hitung jumlah status yang tidak sama dengan 'Document Submitted'
-        $statusCount = Magang::where('status', '!=', 'Document Submitted')
-            ->where('id', $magang->id)
-            ->count();
-
+        // Ambil data Magang berdasarkan id_user auth
+        $magang = Magang::where('id_users', Auth::user()->id_users)->first();
+        $statusCount = Magang::where('status', '!=', 'Document Submitted')->where('id_users', Auth::user()->id_users)->count();
+        // Kirim data Magang ke view
         return view('anggota.monitoring.index', compact('magang', 'satkers', 'statusCount'));
     }
 }

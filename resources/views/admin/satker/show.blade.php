@@ -28,6 +28,27 @@
                             <h4 class="card-header card-title rounded bg-primary text-white shadow-lg text-center-md">
                                 Detail Data Satuan Kerja</h4>
 
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="foto"><strong>Foto Satker</strong></label>
+                                    </div>
+                                    <img class="d-flex justify-end rounded border border-gray-400 mb-3" id="preview"
+                                        src="{{ $satker->foto ? asset('storage/images/satker/' . $satker->foto) : 'https://via.placeholder.com/200' }}"
+                                        alt="Avatar Dummy" style="max-width: 200px; max-height: 200px; margin-top: 10px;">
+                                    <div class="input-group mb-3">
+                                        <label for="foto" class="input-group-text" for="inputGroupFile01">Foto
+                                            Profil</label>
+                                        <input type="text" class="form-control" value="{{ $satker->foto }}" readonly>
+                                        <div class="input-group-append">
+                                            <a href="{{ asset('storage/images/satker/' . $satker->foto) }}" target="_blank"
+                                                class="btn btn-primary">Preview Foto</a>
+                                            <a href="{{ asset('storage/images/satker/' . $satker->foto) }}" download
+                                                class="btn btn-warning ml-2">Download Foto</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label for="nama_satker"><strong>Nama Satuan Kerja</strong></label>
                                 <input type="text" class="form-control" id="nama_satker" name="nama_satker"

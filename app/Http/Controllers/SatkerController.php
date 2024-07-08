@@ -37,24 +37,35 @@ class SatkerController extends Controller
      */
     public function store(Request $request)
     {
-        $satker = new Satker();
-        $validatedData = $request->validate([
-            'nama_satker' => 'required',
-            'deskripsi' => 'nullable',
-            'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        // Validasi request
+        $validated = $request->validate([
+            'nama_satker' => 'required|string|max:255',
+            'deskripsi' => 'required|string',
+            'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Validasi file gambar
         ]);
 
+        $satker = new Satker();
+        $satker->nama_satker = $request->nama_satker;
+        $satker->deskripsi = $request->deskripsi;
+
+        // Handle upload foto
         if ($request->hasFile('foto')) {
             $image = $request->file('foto');
-            $imageName = $satker->nama_satker . '_' . $image->getClientOriginalName();
-            $path = $image->storeAs('public/images/satker', $imageName);
-            $validatedData['foto'] = $imageName;
+
+            if ($image->isValid()) {
+                $imageName = $satker->nama_satker . '_Satuan Kerja';
+                $path = $image->storeAs('public/images/satker', $imageName);
+                $satker->foto = $imageName;
+            } else {
+                return back()->with('error', 'Uploaded file is not valid.');
+            }
         }
 
-        $satker = Satker::create($validatedData);
+        $satker->save();
 
         return redirect()->route('satker.index')->with('success', 'Satker ' . $satker->nama_satker . ' berhasil ditambahkan.');
     }
+
 
     /**
      * Menampilkan detail satker.
@@ -76,30 +87,43 @@ class SatkerController extends Controller
 
     public function update(Request $request, $encryptedId)
     {
-        $satker = Satker::findByEncryptedId($encryptedId);
-
-        $request->validate([
-            'nama_satker' => 'required',
-            'deskripsi' => 'nullable',
-            'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        // Validasi request
+        $validated = $request->validate([
+            'nama_satker' => 'required|string|max:255',
+            'deskripsi' => 'required|string',
+            'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Validasi file gambar
         ]);
 
-        if ($request->hasFile('foto')) {
-            // Hapus gambar lama
-            if ($satker->foto) {
-                Storage::delete('public/images/satker/' . $satker->foto);
-            }
+        $satker = Satker::findByEncryptedId($encryptedId);
 
+        $satker->nama_satker = $request->nama_satker;
+        $satker->deskripsi = $request->deskripsi;
+
+        // Handle upload foto
+        if ($request->hasFile('foto')) {
             $image = $request->file('foto');
-            $imageName = $satker->nama_satker . '_' . $image->getClientOriginalName();
-            $path = $image->storeAs('public/images/satker', $imageName);
-            $request->merge(['foto' => $imageName]);
+
+            if ($image->isValid()) {
+                // Hapus gambar lama
+                if ($satker->foto) {
+                    Storage::delete('public/images/satker/' . $satker->foto);
+                }
+
+                $imageName = $satker->nama_satker . '_Satuan Kerja';
+
+                $path = $image->storeAs('public/images/satker', $imageName);
+
+                $satker->foto = $imageName;
+            } else {
+                return back()->with('error', 'Uploaded file is not valid.');
+            }
         }
 
-        $satker->update($request->all());
+        $satker->save();
 
         return redirect()->route('satker.index')->with('success', 'Satker berhasil diperbarui.');
     }
+
 
     /**
      * Menghapus satker dari database.

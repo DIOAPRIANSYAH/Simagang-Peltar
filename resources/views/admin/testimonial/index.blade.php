@@ -30,8 +30,8 @@
                                         <tr>
                                             <th>No</th>
                                             <th>Nama</th>
-                                            <th>Institusi</th>
-                                            <th>Rating</th>
+                                            <th class="text-center">Institusi</th>
+                                            <th class="text-center">Rating</th>
                                             <th class="text-center">Actions</th>
                                         </tr>
                                     </thead>
@@ -41,22 +41,10 @@
                                                 <td>{{ $no + 1 }}</i>
                                                 </td>
                                                 <td>{{ $testimonial->user->name }}</td>
-                                                <td>{{ $testimonial->user->nama_sekolah }}</td>
-                                                <td>
-                                                    <div class="mt-5 d-flex justify-content-between align-items-center">
-                                                        <div class="small-ratings">
-                                                            @for ($i = 1; $i <= 5; $i++)
-                                                                @if ($i <= $testimonial->rate)
-                                                                    <i class="fa fa-star rating-color"></i>
-                                                                @else
-                                                                    <i class="fa fa-star"></i>
-                                                                @endif
-                                                            @endfor
-                                                        </div>
-                                                    </div>
+                                                <td class="text-center">{{ $testimonial->user->nama_sekolah }}</td>
+                                                <td class="text-center">{{ $testimonial->rate }}</td>
 
-                                                </td>
-                                                <td>
+                                                <td class="text-center">
                                                     <a href="{{ route('testimonial.show', $testimonial->getEncryptedId()) }}"
                                                         class="btn btn-sm btn-info">View</a>
                                                     <a href="{{ route('testimonial.edit', $testimonial->getEncryptedId()) }}"

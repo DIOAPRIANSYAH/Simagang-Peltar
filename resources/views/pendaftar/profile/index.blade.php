@@ -14,7 +14,6 @@
                                 enctype="multipart/form-data">
                                 @csrf
                                 @method('PUT')
-
                                 <div class="space-y-4">
                                     <div>
                                         <label for="foto" class="block text-lg font-bold">Foto Profil</label>

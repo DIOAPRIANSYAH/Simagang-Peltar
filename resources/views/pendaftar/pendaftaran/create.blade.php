@@ -42,14 +42,16 @@
                                             <label for="nomor_surat_rekomendasi" class="block text-lg font-bold">
                                                 Nomor Surat Rekomendasi</label>
                                             <input type="text" class="form-control w-full px-4 py-2 border rounded-lg"
-                                                id="nomor_surat_rekomendasi" name="nomor_surat_rekomendasi" placeholder="2112/XII/558/2024" required>
+                                                id="nomor_surat_rekomendasi" name="nomor_surat_rekomendasi"
+                                                placeholder="2112/XII/558/2024" required>
                                         </div>
 
                                         <div>
                                             <label for="dosen_pembimbing_kampus" class="block text-lg font-bold">Dosen
                                                 Pembimbing Kampus</label>
                                             <input type="text" class="form-control w-full px-4 py-2 border rounded-lg"
-                                                id="dosen_pembimbing_kampus" name="dosen_pembimbing_kampus" placeholder="Dr.Irwansyah" required>
+                                                id="dosen_pembimbing_kampus" name="dosen_pembimbing_kampus"
+                                                placeholder="Dr.Irwansyah" required>
                                         </div>
                                         <div>
                                             <label for="satuan_kerja" class="block text-lg font-bold">Satuan Kerja</label>

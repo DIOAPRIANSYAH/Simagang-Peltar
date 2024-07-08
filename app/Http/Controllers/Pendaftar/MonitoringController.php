@@ -21,15 +21,4 @@ class MonitoringController extends Controller
         // Kirim data Magang ke view
         return view('pendaftar.monitoring.index', compact('magang', 'satkers', 'statusCount'));
     }
-    public function anggota()
-    {
-        $satkers = Satker::all();
-
-        // Ambil data Magang berdasarkan id_user auth
-        $magang = Magang::where('id_users', Auth::id())->first();
-        $statusCount = Magang::where('status', '!=', 'Document Submitted')->where('id_users', Auth::id())->count();
-
-        // Kirim data Magang ke view
-        return view('pendaftar.monitoring.index', compact('magang', 'satkers', 'statusCount'));
-    }
 }

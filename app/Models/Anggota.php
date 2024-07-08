@@ -55,14 +55,13 @@ class Anggota extends Authenticatable
 
     public function magangs()
     {
-        return $this->hasMany(Magang::class, 'id_users');
+        return $this->hasMany(Magang::class, 'id_users', 'id_users');
     }
+
     public function magang()
     {
-        return $this->hasOne(Magang::class);
+        return $this->belongsTo(Magang::class, 'id_magang');
     }
-
-
     public function anggotas()
     {
         return $this->hasMany(Anggota::class, 'id_users');

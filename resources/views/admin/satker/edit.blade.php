@@ -28,7 +28,7 @@
                             <h4 class="card-header card-title rounded bg-primary text-white shadow-lg text-center-md">Edit
                                 Data Satuan Kerja</h4>
 
-                            <form class="forms-sample" method="POST"
+                            <form class="forms-sample" method="POST" enctype="multipart/form-data"
                                 action="{{ route('satker.update', $satker->getEncryptedId()) }}">
                                 @csrf
                                 @method('PUT')
@@ -46,8 +46,8 @@
                                         <div class="input-group mb-3">
                                             <label for="foto" class="input-group-text"
                                                 for="inputGroupFile01">Upload</label>
-                                            <input type="file" class="form-control" id="inputGroupFile01" name="foto"
-                                                onchange="previewImage(event)">
+                                            <input type="file" class="form-control" id="inputGroupFile01" id="foto"
+                                                name="foto" accept="image/*" onchange="previewImage(event)">
                                             <input type="text" class="form-control" value="{{ $satker->foto }}" readonly>
                                             <div class="input-group-append">
                                                 <a href="{{ asset('storage/images/satker/' . $satker->foto) }}"
@@ -56,6 +56,12 @@
                                                     class="btn btn-warning ml-2">Download Foto</a>
                                             </div>
                                         </div>
+
+                                        {{-- <div class="input-group mb-3">
+                                            <label for="foto" class="input-group-text">Upload</label>
+                                            <input type="file" class="form-control" id="foto" name="foto"
+                                                onchange="previewImage(event)">
+                                        </div> --}}
                                     </div>
                                 </div>
 
@@ -78,6 +84,25 @@
         </div>
     @endsection
     @push('js')
+        @if (session('error'))
+            <script>
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: '{{ session('error') }}',
+                });
+            </script>
+        @endif
+
+        @if ($errors->any())
+            <script>
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    html: '{!! implode('<br>', $errors->all()) !!}',
+                });
+            </script>
+        @endif
         <script>
             function previewImage(event) {
                 var reader = new FileReader();

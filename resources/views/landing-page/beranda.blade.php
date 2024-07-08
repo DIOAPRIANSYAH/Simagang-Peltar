@@ -85,17 +85,21 @@
                         {{-- Memeriksa apakah pengguna sudah memiliki entri pada tabel Magang --}}
                         @if (Auth::user()->magangs()->where('id_users', Auth::id())->exists())
                             <a href="{{ route('pendaftaran.index') }}"
-                                class="py-3 px-8 rounded-md text-slate-800 hover:bg-gray-800 hover:text-white bg-gray-200 hover:border-white hover:border-4 transition-all duration-200 ease-out">Lihat
-                                Riwayat Pendaftaran</a>
+                                class="py-3 px-8 rounded-md text-slate-800 hover:bg-gray-800 hover:text-white bg-gray-200 hover:border-white hover:border-4 transition-all duration-200 ease-out">
+                                Lihat Riwayat Pendaftaran
+                            </a>
                         @elseif (Auth::user()->type == 3)
-                            <a href="{{ route('monitoring.anggota') }}"
-                                class="py-3 px-8 rounded-md text-slate-800 hover:bg-gray-800 hover:text-white bg-gray-200 hover:border-white hover:border-4 transition-all duration-200 ease-out">Monitoring
-                                Seleksi</a>
+                            <a href="{{ route('anggota.monitoring') }}"
+                                class="py-3 px-8 rounded-md text-slate-800 hover:bg-gray-800 hover:text-white bg-gray-200 hover:border-white hover:border-4 transition-all duration-200 ease-out">
+                                Monitoring Seleksi
+                            </a>
                         @else
                             <a href="{{ route('pendaftaran.create') }}"
-                                class="py-3 px-8 rounded-md text-slate-800 hover:bg-gray-800 hover:text-white bg-gray-200 hover:border-white hover:border-4 transition-all duration-200 ease-out">Daftar
-                                Magang</a>
+                                class="py-3 px-8 rounded-md text-slate-800 hover:bg-gray-800 hover:text-white bg-gray-200 hover:border-white hover:border-4 transition-all duration-200 ease-out">
+                                Daftar Magang
+                            </a>
                         @endif
+
                     </div>
                 @endauth
 

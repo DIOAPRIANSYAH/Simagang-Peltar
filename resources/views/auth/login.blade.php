@@ -486,18 +486,18 @@
                     {{-- <input type="submit" value="Login" class="btn solid" /> --}}
                     <p class="social-text">Atau Login Melalui Platform Sosial Media</p>
                     <div class="social-media">
-                        <a href="{{ route('auth.facebook') }}" class="social-icon">
+                        {{-- <a href="{{ route('auth.facebook') }}" class="social-icon">
                             <i class="fab fa-facebook-f"></i>
-                        </a>
+                        </a> --}}
                         <a href="{{ route('auth.github') }}" class="social-icon">
                             <i class="fab fa-github"></i>
                         </a>
                         <a href="{{ route('auth.google') }}" class="social-icon">
                             <i class="fab fa-google"></i>
                         </a>
-                        <a href="{{ route('auth.linkedin') }}" class="social-icon">
+                        {{-- <a href="{{ route('auth.linkedin') }}" class="social-icon">
                             <i class="fab fa-linkedin-in"></i>
-                        </a>
+                        </a> --}}
                     </div>
                     <p class="social-text">Apakah Kamu Seorang Anggota?</p>
 
@@ -549,18 +549,18 @@
                     </div>
                     <p class="social-text">Atau Login Melalui Platform Sosial Media</p>
                     <div class="social-media">
-                        <a href="{{ route('auth.facebook') }}" class="social-icon">
+                        {{-- <a href="{{ route('auth.facebook') }}" class="social-icon">
                             <i class="fab fa-facebook-f"></i>
-                        </a>
+                        </a> --}}
                         <a href="{{ route('auth.github') }}" class="social-icon">
                             <i class="fab fa-github"></i>
                         </a>
                         <a href="{{ route('auth.google') }}" class="social-icon">
                             <i class="fab fa-google"></i>
                         </a>
-                        <a href="{{ route('auth.linkedin') }}" class="social-icon">
+                        {{-- <a href="{{ route('auth.linkedin') }}" class="social-icon">
                             <i class="fab fa-linkedin-in"></i>
-                        </a>
+                        </a> --}}
                     </div>
                     <p class="social-text">Apakah Kamu Seorang Anggota?</p>
                     <div class="social-media">

@@ -33,7 +33,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\Auth\AnggotaAuthController;
 use App\Http\Controllers\Admin\LolosSeleksiController;
 use App\Http\Controllers\Admin\PesertaController;
-use App\Http\Controllers\Admin\TestimonialController;
+use App\Http\Controllers\Admin\TestimonialController as AdminTestimonialController;
 use App\Http\Controllers\Anggota\AnggotaController;
 use App\Http\Controllers\Anggota\MonitoringController as AnggotaMonitoringController;
 use App\Http\Controllers\Anggota\ProfileController as AnggotaProfileController;
@@ -45,6 +45,7 @@ use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\LinkedinController;
 use App\Http\Controllers\Admin\MapsController;
 use App\Http\Controllers\Admin\PenilaianMagangController;
+use App\Http\Controllers\Pendaftar\TestimonialController;
 use Illuminate\Support\Facades\Mail;
 
 Auth::routes();
@@ -56,10 +57,9 @@ Route::post('/login-anggota', [AnggotaAuthController::class, 'login'])->name('an
 Route::middleware(['auth:anggota'])->group(function () {
     Route::post('/anggota/logout', [LoginController::class, 'logout'])->name('anggota.logout');
     Route::get('/anggota/dashboard', [HomeController::class, 'anggota'])->name('anggota.dashboard');
-    Route::get('/anggota/monitoring', [AnggotaMonitoringController::class, 'index'])->name('anggota.monitoring.index');
+    Route::get('/anggota/monitoring', [AnggotaMonitoringController::class, 'index'])->name('anggota.monitoring');
     Route::get('/anggota/profile/edit/{encryptedId}', [AnggotaProfileController::class, 'edit'])->name('anggota.profile.edit');
     Route::put('/anggota/profile/update/{encryptedId}', [AnggotaProfileController::class, 'update'])->name('anggota.profile.update');
-    Route::get('anggota/monitoring', [PendaftarMonitoringController::class, 'anggota'])->name('monitoring.anggota');
 
     Route::get('anggota/beranda', [AnggotaBerandaController::class, 'index'])->name('anggota.beranda');
     Route::get('anggota/satker', [AnggotaSatkersController::class, 'index'])->name('anggota.satker');
@@ -80,14 +80,17 @@ Route::middleware(['auth', 'user-access:pendaftar'])->group(function () {
     Route::resource('/pendaftar/anggota', PendaftarAnggotaController::class);
     Route::resource('/pendaftar/monitoring', PendaftarMonitoringController::class);
     Route::resource('/pendaftar/projek', PendaftarProjekController::class);
+    Route::get('/pendaftar/testimonial/index', [TestimonialController::class, 'index'])->name('testimonial.pendaftar.index');
+    Route::get('/pendaftar/testimonial/create', [TestimonialController::class, 'create'])->name('testimonial.pendaftar.create');
+    Route::post('/pendaftar/testimonial/store', [TestimonialController::class, 'store'])->name('testimonial.pendaftar.store');
 });
 
 
 //PIC SATKER Routes List
-Route::middleware(['auth', 'user-access:pic_satker'])->group(function () {
-    Route::get('/pic_satker/dashboard', [HomeController::class, 'pic_satker'])->name('pic_satker.dashboard');
-    Route::post('/pic_satker/logout', [LoginController::class, 'logout'])->name('pic_satker.logout');
-});
+// Route::middleware(['auth', 'user-access:pic_satker'])->group(function () {
+//     Route::get('/pic_satker/dashboard', [HomeController::class, 'pic_satker'])->name('pic_satker.dashboard');
+//     Route::post('/pic_satker/logout', [LoginController::class, 'logout'])->name('pic_satker.logout');
+// });
 
 
 //Admin Routes List
@@ -107,7 +110,7 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
     Route::resource('/admin/peserta', PesertaController::class);
     Route::resource('/admin/penilaian-magang', PenilaianMagangController::class);
     Route::resource('/admin/faq', FaqController::class);
-    Route::resource('/admin/testimonial', TestimonialController::class);
+    Route::resource('/admin/testimonial', AdminTestimonialController::class);
     Route::get('magang/{encryptedId}/export-pdf', [AdminPendaftaranController::class, 'exportPdf'])->name('cetak.surat');
 });
 

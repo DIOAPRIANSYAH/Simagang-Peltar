@@ -66,6 +66,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(Anggota::class, 'id_users');
     }
+    public function testimonials()
+    {
+        return $this->hasMany(Testimonial::class, 'id_users');
+    }
 
     protected $casts = [
         'email_verified_at' => 'datetime',

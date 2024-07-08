@@ -1,11 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Pendaftar;
 
 use App\Http\Controllers\Controller;
+use App\Models\Satker;
 use Illuminate\Http\Request;
 use App\Models\Testimonial;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class TestimonialController extends Controller
 {
@@ -16,8 +18,11 @@ class TestimonialController extends Controller
      */
     public function index()
     {
-        $testimonials = Testimonial::all();
-        return view('admin.testimonial.index', compact('testimonials'));
+        $satkers = Satker::all();
+
+        $authUserId = Auth::id();
+        $testimonial = Testimonial::where('id_users', $authUserId)->latest()->first();
+        return view('pendaftar.testimonial.index', compact('testimonial', 'satkers'));
     }
 
     /**
@@ -27,8 +32,10 @@ class TestimonialController extends Controller
      */
     public function create()
     {
+        $satkers = Satker::all();
+
         $users = User::all();
-        return view('admin.testimonial.create', compact('users'));
+        return view('pendaftar.testimonial.create', compact('users', 'satkers'));
     }
 
     /**
@@ -39,16 +46,19 @@ class TestimonialController extends Controller
      */
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
-            'id_users' => 'required|exists:users,id',
-            'rate' => 'required|integer|between:1,5',
-            'keterangan' => 'required|string',
-        ]);
+        // Menggunakan $request->all() untuk mendapatkan semua input
+        $data = $request->all();
+        $data['id_users'] = Auth::id(); // Menetapkan id_users dari pengguna yang terautentikasi
 
-        $testimonial = Testimonial::create($validatedData);
+        // Membuat instance Testimonial dan menyimpan data
+        $testimonial = Testimonial::create($data);
 
-        return redirect()->route('testimonial.index')->with('success', 'Testimonial berhasil ditambahkan.');
+
+        // Jika berhasil disimpan, redirect ke halaman index
+        return redirect()->route('testimonial.pendaftar.index')->with('success', 'Testimonial berhasil ditambahkan.');
     }
+
+
 
     /**
      * Display the specified resource.

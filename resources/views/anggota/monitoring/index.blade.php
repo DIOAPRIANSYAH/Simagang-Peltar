@@ -16,14 +16,16 @@
                                         Monitoring Proses Seleksi</h2>
                                     <title>Lorem ipsum dolor sit amet</title>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem impedit dolorum
-                                        <br> aliquid quas autem non ad, reiciendis incidunt quis! Aliquid quas deleniti
-                                        autem
-                                        <br> veritatis tempore similique iste ex dolores praesentium?
+                                        <br>
+                                        aliquid quas autem non ad, reiciendis incidunt quis! Aliquid quas deleniti autem
+                                        <br>
+                                        veritatis tempore similique iste ex dolores praesentium?
                                     </p>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem impedit dolorum
-                                        <br> aliquid quas autem non ad, reiciendis incidunt quis! Aliquid quas deleniti
-                                        autem
-                                        <br> veritatis tempore similique iste ex dolores praesentium?
+                                        <br>
+                                        aliquid quas autem non ad, reiciendis incidunt quis! Aliquid quas deleniti autem
+                                        <br>
+                                        veritatis tempore similique iste ex dolores praesentium?
                                     </p>
                                 </div>
                                 <div class="md:w-5/12 lg:w-[70%] w-full">
@@ -41,16 +43,17 @@
                                         </span>
                                         <h3 class="font-medium leading-tight text-slate-900 ml-2 ">Document Submitted</h3>
                                         <p class="text-xs text-slate-500 ml-2 my-2">Lorem ipsum dolor sit amet consectetur
-                                            <br> adipisicing elit. Illum blanditiis non earum odit sequi quas aut
-                                            dignissimos
-                                            <br> cumque obcaecati aliquam iusto accusantium, vitae inventore ipsam. Labore
-                                            maxime
-                                            <br> vitae animi architecto? Lorem ipsum dolor sit amet consectetur adipisicing
-                                            elit.
-                                            <br> Doloremque dolores minus asperiores, autem veritatis eaque distinctio,
-                                            nobis
-                                            <br> nulla tempore reprehenderit aliquam odio laudantium eum ab harum! Corporis
-                                            <br> deserunt sit impedit!
+                                            <br>
+                                            adipisicing elit. Illum blanditiis non earum odit sequi quas aut dignissimos
+                                            <br>
+                                            cumque obcaecati aliquam iusto accusantium, vitae inventore ipsam. Labore maxime
+                                            <br>
+                                            vitae animi architecto? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <br>
+                                            Doloremque dolores minus asperiores, autem veritatis eaque distinctio, nobis
+                                            <br>
+                                            nulla tempore reprehenderit aliquam odio laudantium eum ab harum! Corporis <br>
+                                            deserunt sit impedit!
                                         </p>
                                     </li>
                                     <li class="step mb-10 ml-6" data-status="On Review">
@@ -60,16 +63,11 @@
                                         </span>
                                         <h3 class="font-medium leading-tight text-slate-900 ml-2">On Review</h3>
                                         <p class="text-xs text-slate-500 ml-2 my-2">Lorem ipsum dolor sit, amet consectetur
-                                            <br> adipisicing elit. Dicta, reiciendis culpa quas impedit distinctio dolorem
-                                            <br> corrupti adipisci tenetur error, obcaecati consectetur tempore. Facilis
-                                            alias,
-                                            <br> magni libero harum maxime fugiat consequatur.
-                                            @if ($magang)
-                                                <p><strong>Status:</strong> {{ $magang->status }}</p>
-                                                <!-- Tambahkan tampilan informasi lainnya sesuai kebutuhan -->
-                                            @else
-                                                <p>Data magang tidak ditemukan.</p>
-                                            @endif
+                                            <br>
+                                            adipisicing elit. Dicta, reiciendis culpa quas impedit distinctio dolorem <br>
+                                            corrupti adipisci tenetur error, obcaecati consectetur tempore. Facilis alias,
+                                            <br>
+                                            magni libero harum maxime fugiat consequatur.
                                         </p>
                                     </li>
                                     <li class="step mb-10 ml-6" data-status="Accepted">
@@ -78,14 +76,12 @@
                                             3
                                         </span>
                                         <h3 class="font-medium leading-tight text-slate-900 ml-2">Accepted</h3>
-                                        @if ($magang && $magang->surat_pengantar)
-                                            <p class="text-xs text-slate-500 ml-2 my-2">Step details here</p>
-                                            <a href="{{ asset('storage/pdf/surat_pengantar/' . $magang->surat_pengantar) }}"
-                                                download
-                                                class="py-1 mx-2 px-4 rounded-md text-white text-xs  hover:bg-gray-200 hover:text-slate-800 bg-gray-700 transition-all duration-300 ease-in-out">Surat
-                                                Pengantar
-                                            </a>
-                                        @endif
+                                        <p class="text-xs text-slate-500 ml-2 my-2">Step details here</p>
+                                        <a href="{{ asset('storage/pdf/surat_pengantar/' . Auth::user()->magangs->first()->surat_pengantar) }}"
+                                            download
+                                            class="py-1 mx-2 px-4 rounded-md text-white text-xs  hover:bg-gray-200 hover:text-slate-800 bg-gray-700 transition-all duration-300 ease-in-out">Surat
+                                            Pengantar
+                                        </a>
                                     </li>
                                     <li class="step ml-6" data-status="Rejected">
                                         <span
@@ -121,11 +117,10 @@
     </style>
 @endpush
 @push('js')
-    {{-- {{ Auth::user()->magangs->first()->status }} --}}
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const currentStatus =
-                "{{ $magang ? $magang->status : '' }}; // Ganti dengan status yang diperoleh dari server
+                "{{ Auth::user()->magangs->first()->status }}"; // Ganti dengan status yang diperoleh dari server
 
             const steps = document.querySelectorAll('.step');
             const stepNumbers = document.querySelectorAll('.step-number');

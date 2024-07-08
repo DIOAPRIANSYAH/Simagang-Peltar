@@ -3,108 +3,6 @@
     @include('components.landing-page.navbar')
 @endsection
 @section('main-content')
-    {{-- Timeline --}}
-    {{-- <section class="timeline">
-        <ul>
-            <li>
-                <div class="card_timeline rounded-xl shadow-2xl flex flex-col text-black md:max-w-auto md:flex-row">
-                    <img class="transform transition duration-500 hover:scale-90 h-96 w-full rounded-t-lg object-contain md:h-30 md:max-w-auto md:!rounded-none md:!rounded-s-lg"
-                        src="images/card2.svg" alt="" />
-                    <div class="flex flex-col justify-start p-6">
-                        <span class="font-bold text-white text-4xl bg-slate-800 p-2 w-40 rounded-xl text-center"
-                            x-data="animation()" x-init="animate(1950)" x-text="counter">0</span>
-                        <h5 class="my-3 text-3xl font-bold">
-                            PENGESAHAN PEMBENTUKAN PN TABA
-                        </h5>
-                        <p class="mb-4 text-xl">
-                            Seiring dengan berakhirnya kekuasaan kolonial Belanda di tanah
-                            air, para karyawan Indonesia kemudian berjuang menuntut
-                            perubahan status tambang menjadi pertambangan nasional. Pada
-                            1950, Pemerintah Republik Indonesia kemudian mengesahkan
-                            pembentukan Perusahaan Negara Tambang Arang Bukit Asam (PN
-                            TABA).
-                        </p>
-                        <p
-                            class="text-[10px] text-white rounded-xl p-2 text-center bg-gray-600 hover:bg-gray-300 hover:text-black transition duration-300 ease-in-out cursor-pointer">
-                            Last updated 3 mins ago
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="card_timeline rounded-xl shadow-2xl flex flex-col text-black md:max-w-6xl md:flex-row">
-                    <img class="transform transition duration-500 hover:scale-90 h-96 w-full rounded-t-lg object-cover md:h-90 md:max-w-full md:!rounded-none md:!rounded-s-lg"
-                        src="images/card4.png" alt="" />
-                    <div class="flex flex-col justify-start p-6">
-                        <span class="font-bold text-white text-4xl bg-slate-800 p-2 w-40 rounded-xl text-center"
-                            x-data="animation()" x-init="animate(1981)" x-text="counter">0</span>
-                        <h5 class="my-3 text-3xl font-bold">
-                            PERUBAHAN STATUS MENJADI PT
-                        </h5>
-                        <p class="mb-4 text-xl">
-                            PN TABA kemudian berubah status menjadi Perseroan Terbatas
-                            dengan nama PT Bukit Asam (Persero), yang selanjutnya disebut
-                            PTBA atau Perseroan. Dalam rangka meningkatkan pengembangan
-                            industri batu bara di Indonesia, pada 1990 Pemerintah menetapkan
-                            penggabungan Perum Tambang Batubara dengan Perseroan.
-                        </p>
-                        <p
-                            class="text-[10px] text-white rounded-xl p-2 text-center bg-gray-600 hover:bg-gray-300 hover:text-black transition duration-300 ease-in-out cursor-pointer">
-                            Last updated 3 mins ago
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="card_timeline rounded-xl shadow-2xl flex flex-col text-black md:max-w-6xl md:flex-row">
-                    <img class="transform transition duration-500 hover:scale-90 h-96 w-full rounded-t-lg object-cover md:h-90 md:max-w-full md:!rounded-none md:!rounded-s-lg"
-                        src="images/card6.png" alt="" />
-                    <div class="flex flex-col justify-start p-6">
-                        <span class="font-bold text-white text-4xl bg-slate-800 p-2 w-40 rounded-xl text-center"
-                            x-data="animation()" x-init="animate(2017)" x-text="counter">0</span>
-                        <h5 class="my-3 text-3xl font-bold">
-                            PEMECAHAN NILAI NOMINAL SAHAM
-                        </h5>
-                        <p class="mb-4 text-xl">
-                            PTBA melaksanakan pemecahan nilai nominal saham. Langkah untuk
-                            stock split diambil perseroan untuk meningkatkan likuiditas
-                            perdagangan saham di Bursa Efek serta memperluas distribusi
-                            kepemilikan saham dengan menjangkau berbagai lapisan investor,
-                            sekaligus untuk mendukung program “Yuk Nabung Saham”. Komitmen
-                            yang kuat dari Bukit Asam dalam meningkatkan kinerja perusahaan
-                            merupakan faktor fundamental dari aksi korporasi tersebut.
-                        </p>
-                        <p
-                            class="text-[10px] text-white rounded-xl p-2 text-center bg-gray-600 hover:bg-gray-300 hover:text-black transition duration-300 ease-in-out cursor-pointer">
-                            Last updated 3 mins ago
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="card_timeline rounded-xl shadow-2xl flex flex-col text-black md:max-w-6xl md:flex-row">
-                    <img class="transform transition duration-500 hover:scale-90 h-96 w-full rounded-t-lg object-cover md:h-90 md:max-w-full md:!rounded-none md:!rounded-s-lg"
-                        src="images/card5.png" alt="" />
-                    <div class="flex flex-col justify-start p-6">
-                        <span class="font-bold text-white text-4xl bg-slate-800 p-2 w-40 rounded-xl text-center"
-                            x-data="animation()" x-init="animate(2020)" x-text="counter">0</span>
-                        <h5 class="my-3 text-3xl font-bold">
-                            MANAJEMEN ANTI SUAP ISO 37001:2016
-                        </h5>
-                        <p class="mb-4 text-xl">
-                            Bukit Asam Terapkan Manajemen Anti Suap ISO 37001:2016 dan
-                            menjadi BUMN pertama di sektornya yang menerapkan ISO
-                            37001:2016.
-                        </p>
-                        <p
-                            class="text-[10px] text-white rounded-xl p-2 text-center bg-gray-600 hover:bg-gray-300 hover:text-black transition duration-300 ease-in-out cursor-pointer">
-                            Last updated 3 mins ago
-                        </p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </section> --}}
     {{-- Testimonials --}}
     <section class="py-24 ">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -115,208 +13,35 @@
                     <!--Slider wrapper-->
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                            <div
-                                class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:shadow-lg">
-                                <div class="flex items-center gap-5 mb-5 sm:mb-9">
-                                    <img src="{{ asset('storage/images/placeholder/avatar.png') }}" alt="avatar">
-                                    <div class="grid gap-1">
-                                        <h5 class="text-gray-900 font-medium transition-all duration-500  ">Jane D</h5>
-                                        <span class="text-sm leading-6 text-gray-500">Universitas Lampung</span>
-                                    </div>
-                                </div>
+                            @foreach ($testimonials as $testimonial)
                                 <div
-                                    class="flex items-center mb-5 sm:mb-9 gap-2 text-amber-500 transition-all duration-500  ">
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                </div>
-                                <p
-                                    class="text-sm text-gray-500 leading-6 transition-all duration-500 min-h-24  group-hover:text-gray-800">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dicta impedit sit
-                                    suscipit ea sed, voluptates dignissimos iste vitae ad distinctio ab nobis blanditiis,
-                                    eaque provident maiores. Doloremque, accusantium repudiandae.
-                                </p>
+                                    class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:shadow-lg">
+                                    <div class="flex items-center gap-5 mb-5 sm:mb-9">
+                                        <img src="{{ asset('storage/images/placeholder/avatar.png') }}" alt="avatar">
+                                        <div class="grid gap-1">
+                                            <h5 class="text-gray-900 font-medium transition-all duration-500">
+                                                {{ $testimonial->user->name }}</h5>
+                                            <span
+                                                class="text-sm leading-6 text-gray-700">{{ $testimonial->user->nama_sekolah }}</span>
 
-                            </div>
-                            <div
-                                class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:shadow-lg">
-                                <div class="flex items-center gap-5 mb-5 sm:mb-9">
-                                    <img src="	{{ asset('storage/images/placeholder/avatar.png') }}" alt="avatar">
-                                    <div class="grid gap-1">
-                                        <h5 class="text-gray-900 font-medium transition-all duration-500  ">Harsh P.
-                                        </h5>
-                                        <span class="text-sm leading-6 text-gray-500">Institute Teknologi Bandung </span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div
-                                    class="flex items-center mb-5 sm:mb-9 gap-2 text-amber-500 transition-all duration-500  ">
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                </div>
-                                <p
-                                    class="text-sm text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eveniet omnis dolorum
-                                    odit, necessitatibus tempora voluptate nisi amet voluptates fugiat, dolores ab
-                                    accusantium, sequi quisquam repellendus! Esse quidem consequatur provident.
-                                </p>
-
-                            </div>
-                            <div
-                                class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:shadow-lg">
-                                <div class="flex items-center gap-5 mb-5 sm:mb-9">
-                                    <img src="{{ asset('storage/images/placeholder/avatar.png') }}" alt="avatar">
-                                    <div class="grid gap-1">
-                                        <h5 class="text-gray-900 font-medium transition-all duration-500  ">Jane D</h5>
-                                        <span class="text-sm leading-6 text-gray-500">Politeknik Negeri Malang </span>
+                                    <div
+                                        class="flex items-center mb-5 sm:mb-9 gap-2 text-amber-500 transition-all duration-500">
+                                        @for ($i = 1; $i <= $testimonial->rate; $i++)
+                                            <svg class="w-5 h-5" viewBox="0 0 18 17" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z" />
+                                            </svg>
+                                        @endfor
                                     </div>
+                                    <p
+                                        class="text-sm text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800">
+                                        {{ $testimonial->keterangan }}
+                                    </p>
                                 </div>
-                                <div
-                                    class="flex items-center mb-5 sm:mb-9 gap-2 text-amber-500 transition-all duration-500  ">
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                </div>
-                                <p
-                                    class="text-sm text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla architecto eum
-                                    deleniti laborum quia id. Est dolor quos consequatur, explicabo esse ab distinctio.
-                                    Quisquam accusantium adipisci fugiat voluptatibus esse.
-                                </p>
-
-                            </div>
-                            <div
-                                class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:shadow-lg">
-                                <div class="flex items-center gap-5 mb-5 sm:mb-9">
-                                    <img src="	{{ asset('storage/images/placeholder/avatar.png') }}" alt="avatar">
-                                    <div class="grid gap-1">
-                                        <h5 class="text-gray-900 font-medium transition-all duration-500  ">Harsh P.
-                                        </h5>
-                                        <span class="text-sm leading-6 text-gray-500">UPN Veteran Yogyakarta</span>
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex items-center mb-5 sm:mb-9 gap-2 text-amber-500 transition-all duration-500  ">
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                </div>
-                                <p
-                                    class="text-sm text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla architecto eum
-                                    deleniti laborum quia id. Est dolor quos consequatur, explicabo esse ab distinctio.
-                                    Quisquam accusantium adipisci fugiat voluptatibus esse.
-                                </p>
-
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -327,8 +52,7 @@
                         Apa Kata Mereka ?</h2>
                     <h3 class="font-semibold lg:text-2xl text-xl lg:leading-9 md:leading-7 leading-9 text-gray-700">
                         Magang di Bukit Asam Unit Pelabuhan Tarahan</h3>
-                    <div
-                        class="mt-4 flex md:justify-between md:items-start md:flex-row flex-col justify-start items-start">
+                    <div class="mt-4 flex md:justify-between md:items-start md:flex-row flex-col justify-start items-start">
                         <div class="">
                             <p class="font-normal text-base leading-6 text-gray-600 lg:w-8/12 md:w-9/12">
                                 Here are few of the most frequently asked questions by our Internship Students</p>
@@ -344,8 +68,7 @@
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M20.9999 12L4.99992 12M9.99992 6L4.70703 11.2929C4.3737 11.6262 4.20703 11.7929 4.20703 12C4.20703 12.2071 4.3737 12.3738 4.70703 12.7071L9.99992 18"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
 
                         </button>
@@ -356,8 +79,7 @@
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
 
                         </button>

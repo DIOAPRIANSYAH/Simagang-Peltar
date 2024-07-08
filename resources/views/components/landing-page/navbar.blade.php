@@ -122,7 +122,6 @@
                             @endif
                         @endif
 
-
                         @if (Auth::user()->magangs()->where('id_users', Auth::id())->exists())
                             <li>
                                 <a href="{{ route('monitoring.index') }}"
@@ -138,6 +137,27 @@
                                 </a>
                             </li>
                         @endif
+
+
+                        @if (Auth::check() && Auth::user()->type == 3)
+                        @else
+                            @if (Auth::user()->testimonials()->where('id_users', Auth::id())->exists())
+                                <li>
+                                    <a href="{{ route('testimonial.pendaftar.index') }}"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
+                                        Testimonial
+                                    </a>
+                                </li>
+                            @else
+                                <li>
+                                    <a href="{{ route('testimonial.pendaftar.create') }}"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
+                                        Testimonial
+                                    </a>
+                                </li>
+                            @endif
+                        @endif
+
                         {{-- <li>
                             @php
                                 // Mengambil magang pengguna yang diautentikasi dengan status 'Accepted'
